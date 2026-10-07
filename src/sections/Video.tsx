@@ -4,6 +4,8 @@ import { SITE } from "../lib/site";
 
 export function Video() {
   const id = SITE.youtubeVideoId.trim();
+  const src = SITE.introVideo.trim();
+  const base = import.meta.env.BASE_URL;
 
   return (
     <section className="border-y border-[#e2d8c6] bg-[#1e3050]">
@@ -13,14 +15,24 @@ export function Video() {
             <span className="h-px w-10 bg-[#e8b39d]" /> A proper hello
           </p>
           <h2 className="font-serif-d max-w-2xl text-4xl font-medium leading-[1.05] tracking-tight text-[#f6f1e9] md:text-5xl">
-            Two minutes on how I work —{" "}
-            <em className="text-[#e8b39d]">in my own words.</em>
+            From chaos to cadence,{" "}
+            <em className="text-[#e8b39d]">in under a minute.</em>
           </h2>
         </Reveal>
 
         <Reveal delay={0.15}>
           <div className="mt-12 overflow-hidden rounded-3xl border border-[#f6f1e9]/15 shadow-[0_40px_100px_-40px_rgba(0,0,0,0.6)]">
-            {id ? (
+            {src ? (
+              <video
+                className="block aspect-video w-full bg-[#f6f1e9]"
+                src={`${base}${src}`}
+                poster={SITE.introPoster ? `${base}${SITE.introPoster}` : undefined}
+                controls
+                playsInline
+                preload="metadata"
+                aria-label="Introduction video: Shalom Agtagma"
+              />
+            ) : id ? (
               <div className="aspect-video w-full">
                 <iframe
                   className="h-full w-full"

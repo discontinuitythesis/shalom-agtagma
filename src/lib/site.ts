@@ -8,6 +8,10 @@ export const SITE = {
   // Paste a YouTube video ID here (e.g. "dQw4w9WgXcQ") to enable the intro
   // video section. Unlisted videos work fine.
   youtubeVideoId: "",
+  // Self-hosted intro video (files live in public/video). Takes priority over
+  // youtubeVideoId. Set to "" to fall back to YouTube or the placeholder.
+  introVideo: "video/shalom-intro.mp4",
+  introPoster: "video/shalom-intro-poster.jpg",
   mailtoHello:
     "mailto:rejoiceshalom@gmail.com?subject=Working%20together&body=Hi%20Shalom%2C%0A%0AHere%27s%20what%27s%20on%20my%20plate%3A%0A%0A",
 };
