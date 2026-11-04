@@ -6,6 +6,7 @@ import { Services } from "../sections/Services";
 import { Experience } from "../sections/Experience";
 import { Video } from "../sections/Video";
 import { Contact } from "../sections/Contact";
+import { WhatsAppButton } from "../components/WhatsAppButton";
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
         <Video />
         <Contact />
       </main>
+      <WhatsAppButton />
     </div>
   );
 }
