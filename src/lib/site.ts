@@ -1,7 +1,7 @@
 export const SITE = {
   name: "Shalom Agtagma",
   fullName: "Rejoice Shalom G. Agtagma",
-  email: "rejoiceshalom@gmail.com",
+  email: "hello@shalomagtagma.com",
   whatsapp: "https://wa.me/639985524212",
   linkedin: "https://www.linkedin.com/in/shalomagtagma/",
   keishaSite: "https://discontinuitythesis.github.io/keisha-link-builders/",
@@ -13,5 +13,5 @@ export const SITE = {
   introVideo: "video/shalom-intro.mp4",
   introPoster: "video/shalom-intro-poster.jpg",
   mailtoHello:
-    "mailto:rejoiceshalom@gmail.com?subject=Working%20together&body=Hi%20Shalom%2C%0A%0AHere%27s%20what%27s%20on%20my%20plate%3A%0A%0A",
+    "mailto:hello@shalomagtagma.com?subject=Working%20together&body=Hi%20Shalom%2C%0A%0AHere%27s%20what%27s%20on%20my%20plate%3A%0A%0A",
 };
